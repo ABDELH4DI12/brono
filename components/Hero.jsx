@@ -67,7 +67,7 @@ export default function Hero() {
         <div className="precision-hero__statement">
           <p className="precision-hero__kicker">Ingénierie · Aménagement · Automatisation</p>
           <h1 aria-label="La précision prend forme">
-            <span className="precision-hero__word"><span>LA PRÉCISION</span></span>
+            <span className="precision-hero__word"><span>LA <br className="precision-hero__mobile-break" />PRÉCISION</span></span>
             <span className="precision-hero__word precision-hero__word--shift"><span>PREND</span></span>
             <span className="precision-hero__word precision-hero__word--serif"><span>forme.</span></span>
           </h1>
