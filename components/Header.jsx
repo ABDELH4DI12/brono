@@ -30,7 +30,7 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
+    <header className={`site-header${scrolled ? " is-scrolled" : ""}${open ? " is-menu-open" : ""}`}>
       <div className="header-shell">
         <Brand light={!scrolled && !open} />
         <nav className="desktop-nav" aria-label="Navigation principale">
@@ -55,7 +55,10 @@ export default function Header() {
           ))}
         </nav>
         <div className="mobile-menu__bottom">
-          <a href="tel:+212606077094">06 06 07 70 94</a>
+          <div>
+            <span>Contact direct</span>
+            <a href="tel:+212606077094">06 06 07 70 94</a>
+          </div>
           <Link className="button" href="/#contact" onClick={() => setOpen(false)}>Demander un devis</Link>
         </div>
       </div>
